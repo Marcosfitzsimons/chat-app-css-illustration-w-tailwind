@@ -1,12 +1,12 @@
-### In this project only use the css framework Tailwind Css.
-
-### Tailwind CSS - Easy to setup? by A shot of code, great youtube resource for begginers:
-
+### Resources:
+### Great youtube resource:
+        -Tailwind CSS - Easy to setup? by A shot of code
         https://www.youtube.com/watch?v=RUVLnECJNrw
 
-### At the moment I Write this line of code:
+### Comments:
+### I only had one problem linking my custom css variables to the tailwind functionality. I was able to fix it by following the official documentation:
+        https://tailwindcss.com/docs/customizing-colors#using-css-variables
 
-    I only have one problem to vinculate my css custom variables with tailwind functionality.
-    I can fix this easily, following the steps of this docs:
-
-### https://tailwindcss.com/docs/customizing-colors#using-css-variables
+### Conclusion: 
+        I found tailwind to be a powerful tool for interface development.
+        It will be a matter of practice to get familiar with tailwind
