@@ -22,5 +22,9 @@ module.exports = {
       'bg-chat': '#E4DCE8'
     },
   },
-  plugins: [],
+  plugins: [
+    "postcss-import",
+    "tailwindcss",
+    "autoprefixer"
+  ]
 }
