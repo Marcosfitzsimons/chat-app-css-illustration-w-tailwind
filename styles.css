@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --pale-violet: 276 100% 81%; /* (sub-heading at the top of the app UI) */
+    --moderat-violet: 276 55% 52%; /*  (chat on the left) */
+    --desaturate-dark-violet: 271 15% 43%; /* (chat on the right)  */
+    --grayish-blue: 206 6% 79%; /* (placeholder text) */
+    --very-dark-desaturated-violet: 271 36% 24%; /* (main heading) */
+    --dark-grayish-violet: 270 7% 64%; /* (paragraph) */
+    --lightmagenta: 293 100% 63%; /* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+    --lightviolet: 264 100% 61%;
+    --lightgray: 0 0% 100%;
+    --white: 0 0% 100%;
+    --light-grayish-violet: 270 20% 96%; /* (app background) */
+    --very-dark-desaturated-violet: 271 36% 24%; /* (submit button background) */
+    --very-light-magenta: 289 100% 72%; /* (radio button outline) */
+    --bg-chat: #e4dce8;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  max-width: 75ch;
+}
