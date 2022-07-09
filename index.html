@@ -5,35 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <title>Chat App Css Illustration</title>
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./tailwind/output.css">
 
 </head>
-<body class="text-base font-rubik flex flex-col items-center bg-light-grayish-violet h-screen w-full py-4">
+<body class="text-base font-rubik flex flex-col items-center bg-light-grayish-violet h-screen w-full py-4 relative overflow-x-hidden">
 
-  <div class="hidden"></div>
+  <div class="absolute h-3/5 lg:h-[90%] w-1/2 lg:w-4/12 top-0 left-0 lg:-left-24 bg-gradient-to-t from-lightviolet via-lightviolet to-lightmagenta z-10 rounded-br-full lg:rounded-b-[300px]"></div>
 
-  <main class="flex flex-col items-center h-screen max-w-screen-xl w-full gap-3">
+  <main class="lg:flex-row md:w-11/12 lg:justify-around flex flex-col items-center h-full max-w-screen-xl lg:max-w-screen-2xl w-full gap-8 lg:gap-3 z-50">
 
-    <article class="bg-white py-4 rounded-3xl w-11/12 sm:w-96 shadow-lg">
+    <article class="bg-white py-4 rounded-[2.5rem] w-[21rem] shadow-lg lg:ml-3 animate__animated animate__backInLeft">
 
       <div class="w-11/12 mx-auto bg-light-grayish-violet rounded-3xl">
 
         <header class="shadow-md rounded-t-3xl flex flex-col items-center justify-center bg-gradient-to-r from-lightviolet to-lightmagenta ... text-white">
 
-          <div class="bg-white h-6 w-7/12 rounded-b-2xl"></div>
+          <div class="bg-white h-5 w-7/12 rounded-b-2xl"></div>
           <div class="header-container w-11/12 flex items-center justify-between p-1.5">
 
             <div class="flex items-center gap-1.5 my-2">
               <i class="ri-arrow-left-s-line text-xl cursor-pointer"></i>
-              <div class="cursor-pointer w-10 h-10 rounded-full bg-white flex items-center justify-center">
-                <img src="../images/avatar.jpg" alt="avatar" class="w-9 h-9 rounded-full">
+              <div class="cursor-pointer w-7 h-7 rounded-full bg-white flex items-center justify-center">
+                <img src="../images/avatar.jpg" alt="avatar" class="w-[26px] h-[26px] rounded-full">
               </div>
               <div class="text-lightgray mx-2">
-                <h3 class="font-bold">Samuel Green</h3>
+                <h3 class="font-bold text-sm">Samuel Green</h3>
                 <p class="text-xs text-pale-violet">Available to Walk</p>
               </div>
             </div>
@@ -46,44 +49,44 @@
 
         </header>
 
-        <section class="gap-5 flex flex-col justify-center text-xs w-11/12 mx-auto font-normal py-4">
+        <section class="gap-5 flex flex-col justify-center text-xs w-11/12 mx-auto font-medium py-4">
           <div class="w-7/12 flex flex-col gap-2 text-moderat-violet">
-            <p class="bg-bg-chat p-2 rounded-r-lg rounded-tl-xl rounded-bl-lg">That sounds great. I’d be happy with that.</p>
-            <p class="bg-bg-chat p-2 rounded-r-lg rounded-tl-xl rounded-bl-lg">Could you send over some pictures of your dog, please?</p>
+            <p class="bg-bg-chat p-2 rounded-r-lg rounded-tl-xl rounded-bl-lg h-12 w-44 select-none drop-shadow-md">That sounds great. I’d be happy with that.</p>
+            <p class="bg-bg-chat p-2 rounded-r-lg rounded-tl-xl rounded-bl-lg h-12 w-48 select-none drop-shadow-md">Could you send over some pictures of your dog, please?</p>
           </div>
           <div class="flex flex-col w-7/12 self-end text-end gap-2 justify-center">
             <div class="flex gap-2 self-end w-60 justify-end">
-              <img src="../images/dog-image-1.jpg" alt="dog smile" class="cursor-pointer dog-img rounded-lg w-16">
-              <img src="../images/dog-image-2.jpg" alt="dog photo" class="cursor-pointer dog-img rounded-lg w-16">
-              <img src="../images/dog-image-3.jpg" alt="dog walking" class="cursor-pointer dog-img rounded-lg w-16">
+              <img src="../images/dog-image-1.jpg" alt="dog smile" class="cursor-pointer dog-img rounded-lg w-12">
+              <img src="../images/dog-image-2.jpg" alt="dog photo" class="cursor-pointer dog-img rounded-lg w-12">
+              <img src="../images/dog-image-3.jpg" alt="dog walking" class="cursor-pointer dog-img rounded-lg w-12">
             </div>
-            <p class="rounded-l-lg rounded-tr-xl rounded-br-lg p-2 bg-white w-40 self-end text-start text-dark-grayish-violet shadow-lg">Here are a few pictures. She’s a happy girl!</p>
-            <p class="rounded-l-lg rounded-tr-xl rounded-br-lg p-2 bg-white w-30 self-end text-start text-dark-grayish-violet pr-3 shadow-lg">Can you make it?</p>
+            <p class="rounded-l-lg rounded-tr-xl rounded-br-lg p-2 bg-white w-40 self-end text-start text-dark-grayish-violet drop-shadow-md select-none">Here are a few pictures. She’s a happy girl!</p>
+            <p class="rounded-l-lg rounded-tr-xl rounded-br-lg p-2 bg-white w-30 self-end text-start text-dark-grayish-violet pr-3 drop-shadow-md select-none">Can you make it?</p>
           </div>
           <div class="flex flex-col gap-2">
-            <p class="bg-bg-chat p-2 rounded-r-lg rounded-tl-xl rounded-bl-lg w-7/12 text-moderat-violet">She looks so happy! The time we discussed works. How long shall I take her out for?
+            <p class="bg-bg-chat p-2 rounded-r-lg rounded-tl-xl rounded-bl-lg w-7/12 text-moderat-violet select-none drop-shadow-md">She looks so happy! The time we discussed works. How long shall I take her out for?
             </p>
             <ul class="flex flex-col gap-2 text-lightgray">
-              <li class="flex justify-between items-center h-10 bg-gradient-to-r from-lightmagenta to-lightviolet w-3/4 rounded-r-lg rounded-tl-xl rounded-bl-lg p-2 pr-6 gap-2">
+              <li class="flex justify-between items-center h-10 bg-gradient-to-r from-lightmagenta to-lightviolet w-3/4 rounded-r-lg rounded-tl-xl rounded-bl-lg p-2 pr-6 gap-3 drop-shadow-md">
                 <div class="flex h-12 g-1 items-center">
                   <div class="check-container w-10 aspect-square flex items-center justify-center">
-                    <div class="opacity-80 relative border-solid border border-lightgray h-4 aspect-square rounded-full cursor-pointer self-center"></div>
+                    <div class="relative border-solid border border-very-light-magenta h-4 aspect-square rounded-full cursor-pointer self-center"></div>
                   </div>
                   <p class="text-xs">30 minute walk</p>
                 </div>
                 <div class="price-right">
-                  <p class="text-base text-white">$29</p>
+                  <p class="text-base text-white font-medium">$29</p>
                 </div>
               </li>
-              <li class="flex justify-between items-center h-10 bg-gradient-to-r from-lightmagenta to-lightviolet w-3/4 rounded-r-lg rounded-tl-xl rounded-bl-lg p-2 pr-6 gap-2">
+              <li class="flex justify-between items-center h-10 bg-gradient-to-r from-lightmagenta to-lightviolet w-3/4 rounded-r-lg rounded-tl-xl rounded-bl-lg p-2 pr-6 gap-3 drop-shadow-md">
                 <div class="flex h-12 g-1 items-center">
                   <div class="check-container w-10 aspect-square flex items-center justify-center">
-                    <div class="opacity-80 relative border-solid border border-lightgray h-4 aspect-square rounded-full cursor-pointer self-center"></div>
+                    <div class="relative border-solid border border-very-light-magenta h-4 aspect-square rounded-full cursor-pointer self-center"></div>
                   </div>
                   <p class="">1 hour walk</p>
                 </div>
                 <div class="price-right">
-                  <p class="text-base text-white">$49</p>
+                  <p class="text-base text-white font-medium">$49</p>
                 </div>
               </li>
             </ul>
@@ -93,7 +96,7 @@
         <footer class="w-full pb-3 pt-2">
           <div class="w-11/12 m-auto flex items-center justify-between p-2 px-6 pr-2 bg-white rounded-full">
             <div class="footer-text-container">
-              <p class="text-grayish-blue text-sm">Type a message...</p>
+              <p class="text-grayish-blue text-sm select-none">Type a message...</p>
             </div>
             <div class="cursor-pointer bg-very-dark-desaturated-violet w-8 aspect-square rounded-full flex items-center justify-center">
               <i class="ri-arrow-right-s-line text-white text-2xl"></i>
@@ -105,16 +108,16 @@
 
     </article>
 
-    <section class="flex flex-col items-center justify-center gap-6 w-full pt-5">
-        <h1 class="text-5xl text-very-dark-desaturated-violet font-medium">Simple Booking</h1>
-        <p class="text-center w-4/5 m-auto text-dark-grayish-violet pb-5">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+    <section class="flex flex-col items-center lg:items-start justify-center gap-6 lg:gap-10 w-11/12 lg:w-[42rem] pt-5 pb-5">
+        <h1 class="text-4xl text-very-dark-desaturated-violet font-medium lg:text-5xl">Simple Booking</h1>
+        <p class="text-center lg:text-start w-4/5 text-dark-grayish-violet font-medium lg:text-lg lg:leading-8">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
           discuss arrangements and make bookings. Once the walk has been completed you can rate 
           your walker and book again all through the chat.</p>
     </section>
 
   </main>
 
-  <div class="hidden"></div>
+  <div class="absolute h-3/5 lg:h-[90%] w-1/2 lg:w-4/12 bottom-0 right-0 lg:-right-24 bg-grayish-blue opacity-10 z-10 rounded-tl-full lg:rounded-t-[300px]"></div>
 
-</body>
+</body2
 </html>

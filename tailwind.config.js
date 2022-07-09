@@ -7,7 +7,7 @@ module.exports = {
     },
     colors: {
       'pale-violet': 'hsl(var(--pale-violet) / 1)',
-      'moderat-violet': 'hsl(var(--moderat-violet) / .8)',
+      'moderat-violet': 'hsl(var(--moderat-violet) / 1)',
       'desaturate-dark-violet': 'hsl(var(--desaturate-dark-violet) / 1)',
       'grayish-blue': 'hsl(var(--grayish-blue) / 1)',
       'very-dark-desaturated-violet': 'hsl(var(--very-dark-desaturated-violet) / 1)',
